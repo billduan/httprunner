@@ -1,11 +1,35 @@
 # Release History
 
-## v4.1.2 (2022-06-05)
+## v4.1.3 (2022-06-14)
+
+**go version**
+
+- feat #1342: support specify custom python3 venv, priority is greater than $HOME/.hrp/venv
+- feat: assert python3 package installed and version matched
+- refactor: build plugin mechanism, cancel automatic installation of dependencies
+- fix #1352: avoid conversion to exponential notation
+
+**python version**
+
+- fix: unexpected changes in step variables
+
+## v4.1.2 (2022-06-09)
+
+- feat: add Dockerfile
+- fix #1336: extract package in Windows
+- fix: install package on MinGW64 and Windows
+
+**go version**
 
 - fix #1331: use `str_eq` to assert string and digit equality
-- fix #1336: extract package in Windows
-- fix: install package on MinGW64
+- fix: load overall `pick_order` strategy in parameters_setting
+- fix: ensure all dependencies in debugtalk.py are installed
+- fix: select parameters with `random` strategy
 - change: remove `hrp har2case`, replace with `hrp convert`
+
+**python version**
+
+- feat #1316: add running log and request & response details in allure report
 
 ## v4.1.1 (2022-05-31)
 
